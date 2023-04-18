@@ -1,0 +1,338 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variable */
+:root{
+    --navbar-height:59px;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/*navbar: logo ,image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+/* navbar:list styling */
+#navbar{
+   /* position: relative;*/
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar ul li{
+    color:;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+   text-shadow: 7px 4px 10px black;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../images/5301521.webp') no-repeat center center/cover;
+    height: 650px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 7px 3px 10px black;
+    font-family: 'Roboto', sans-serif;
+}
+#home h2{
+    color: white;
+    text-align: center;
+    text-shadow: 7px 3px 10px black;
+    font-family: 'Roboto', sans-serif;
+}
+#home h3{
+    color: white;
+    text-align: center;
+    text-shadow: 7px 3px 10px black;
+    font-family: 'Roboto', sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 7px 3px 10px black;
+    font-family: 'Roboto', sans-serif;
+}
+/*service section */
+#services{
+    margin-top:34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(38, 141, 182);
+    padding: 34px;
+    margin: 2px 50px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 160px;
+    margin:auto;
+    display: block;
+}
+#services .box p{
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+#services h1{ 
+}
+/* about section */
+#about-section{
+    height: 600px;
+}
+#about-section::before{
+    content: "";
+    position: absolute;
+    background: url('../images/doctor9.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 85%;
+    z-index: -1;
+    opacity: ;
+}
+#about-section2{
+   position: sticky;
+   z-index: -1;
+}
+
+#about-section2::before{
+    content: "";
+    position: absolute;
+    background: url('../images/doctor9.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 135%;
+    z-index: -1;
+    opacity: ;
+}
+#about-section2 h1{
+    color: rgb(234, 221, 221);
+    text-shadow: 7px 3px 10px black;
+}
+#about-section2 p{
+    color: rgb(234, 221, 221);
+    text-shadow: 7px 3px 10px black;
+    font-size: 20px;
+}
+
+#about-section2 h2{
+    color: rgb(234, 221, 221);
+    text-shadow: 7px 3px 10px black;
+}
+#about-section h1{
+    color: rgb(234, 221, 221);
+    text-shadow: 7px 3px 10px black;
+}
+#about-section p{
+    color: rgb(234, 221, 221);
+    text-shadow: 7px 3px 10px black;
+    font-size: 20px;
+}
+
+#about-section h2{
+    color: rgb(234, 221, 221);
+    text-shadow: 7px 3px 10px black;
+}
+    
+/* utility class */
+.h-primary{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.3rem ;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px  black;
+    background-color:white;
+    color:black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow:  7px 3px 10px black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    width: 150px;
+}
+.btn:hover{
+    background: #2980b9;
+    box-shadow: -7px -3px 10px black ;
+
+}
+.center{
+    text-align: center;
+}
+/*contact */
+.contact-section h1{
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 3rem; 
+    text-shadow: 7px 5px 10px black;
+}
+/*.border{
+    width: 100px;
+    height: 10px;
+    background: white;
+    margin: 40px auto;
+}*/
+.contact-section{
+    background: url(../images/5301521.webp)no-repeat center;
+    padding: 48px 0;
+    background-size: cover;
+    background-position: center;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+
+}
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: rgba(255,255,255,0.1);
+    padding: 20px 40px;
+    outline: none;
+    color:;
+    transition: 0.5s;
+    box-shadow: 1px 5px 7px 1px rgba(0,0,0,0.9);
+    border-radius: 10px;
+    font-size:larger;
+}
+
+::-webkit-input-placeholder{
+   color: black;
+}
+::-webkit-input-placeholder:hover{
+    color: black;
+}
+.contact-form-text:hover{
+    box-shadow: 0 0 10px 4px #34495e;
+    color: black;
+}
+.contact-form-btn{
+    align-self: center;
+    border: 0;
+    background-color:white;
+    color:black;
+    padding: 12px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: larger;
+    font-weight: bold;
+}
+.contact-form-btn:hover{
+    background: #2980b9;
+    box-shadow: -7px -3px 10px black ;
+}
+.right{
+    float: right;
+    text-decoration: none;
+    color: white;
+    margin-top: 0px;
+    font-size: large;
+}
+label a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 10px 10px 10px black;
+    font-size: 25px;
+    
+
+}
+
+/* footer section */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    height: 35px;
+    font-size: larger;
+}
+/* appointment */
+/* address */
+#address-section{
+    font-size: 30px;
+    color: rgb(234, 221, 221);
+
+}
+#address-section p{
+    font-size: 25px;
+}
+#address-section h3{
+    font-size: 25px;
+}
+#address-section{
+    background: url('../images/doctor10.webp')no-repeat center center/cover;
+    height: 60%;
+}
+
+
+ 
+
+
